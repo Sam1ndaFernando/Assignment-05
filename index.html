@@ -16,6 +16,9 @@
 
 </head>
 <body>
+
+<!--/////////////////////////////////// -- Navigation bar -- ////////////////////////////////////////////////////-->
+
 <header>
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
@@ -46,6 +49,64 @@
     </div>
   </nav>
 </header>
+
+
+<!--/////////////////////////////////// -- Home Section -- ////////////////////////////////////////////////////-->
+
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Customers</h3>
+            <p class="count">125</p>
+            <i class="fa-solid fa-user fa-2xl"></i>
+            <a class="link-page" id="customer_link">Manage Customers ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Items</h3>
+            <p class="count">229</p>
+            <i class="fa-solid fa-layer-group fa-2xl"></i>
+            <a class="link-page" id="item_link">Manage Items ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Orders</h3>
+            <p class="count">56</p>
+            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            <a class="link-page" id="order_link">Manage Orders ></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+
+      <div class="col col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+        <div class="chart-card">
+          <h3 class="chart-title">Revenue</h3>
+          <div>
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+        <img src="assets/img/economic_modernization.png" class="image-class" alt="image">
+      </div>
+    </div>
+  </div>
+</section>
+
 
 </body>
 </html>
