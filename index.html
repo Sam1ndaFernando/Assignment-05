@@ -107,6 +107,76 @@
   </div>
 </section>
 
+<!--/////////////////////////////////// -- Customer Section -- ////////////////////////////////////////////////////-->
+
+<section id="customer">
+  <div class="container">
+
+    <div class="row mb-3">
+      <div class="col">
+        <h3 class="header">Manage Customer</h3>
+      </div>
+    </div>
+
+    <div class="order_container">
+      <div class="row">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+          <form>
+            <div class="mb-3">
+              <label for="customerId" class="form-label">Customer Id</label>
+              <input type="text" class="form-control" id="customerId">
+            </div>
+            <div class="mb-3">
+              <label for="fullname" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullname">
+            </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">Address</label>
+              <textarea class="form-control" id="address" style="height: 65px"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Contact</label>
+              <input type="text" class="form-control" id="contact">
+            </div>
+
+            <div id="customer_btn" class="mt-5">
+              <button type="button" class="btn btn-outline-success">Submit</button>
+              <button type="button" class="btn btn-outline-warning">Update</button>
+              <button type="button" class="btn btn-outline-danger">Delete</button>
+              <button type="reset" class="btn btn-outline-secondary">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+          <div id="customer_search" class="search mb-4 mt-4 d-flex flex-row align-items-end">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="form-control" placeholder="Search">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>customer_id</option>
+              <option>name</option>
+              <option>address</option>
+              <option>salary</option>
+            </select>
+          </div>
+
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th scope="col">Customer Id</th>
+              <th scope="col">Full Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Contact</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
