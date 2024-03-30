@@ -117,7 +117,6 @@
         <h3 class="header">Manage Customer</h3>
       </div>
     </div>
-
     <div class="order_container">
       <div class="row">
         <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
@@ -138,7 +137,6 @@
               <label for="contact" class="form-label">Contact</label>
               <input type="text" class="form-control" id="contact">
             </div>
-
             <div id="customer_btn" class="mt-5">
               <button type="button" class="btn btn-outline-success">Submit</button>
               <button type="button" class="btn btn-outline-warning">Update</button>
@@ -147,7 +145,6 @@
             </div>
           </form>
         </div>
-
         <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
           <div id="customer_search" class="search mb-4 mt-4 d-flex flex-row align-items-end">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -159,7 +156,6 @@
               <option>salary</option>
             </select>
           </div>
-
           <table class="table table-hover">
             <thead>
             <tr>
@@ -177,6 +173,72 @@
     </div>
   </div>
 </section>
+
+<!--/////////////////////////////////// -- Item Section -- ////////////////////////////////////////////////////-->
+
+<section id="item">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col">
+        <h3 class="header">Manage Items</h3>
+      </div>
+    </div>
+    <div class="order_container">
+      <div class="row">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+          <form>
+            <div class="mb-3">
+              <label for="itemCode" class="form-label">Item Code</label>
+              <input type="text" class="form-control" id="itemCode">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="description">
+            </div>
+            <div class="mb-3">
+              <label for="unitPrice" class="form-label">Unit Price</label>
+              <input type="text" class="form-control" id="unitPrice">
+            </div>
+            <div class="mb-3">
+              <label for="qty" class="form-label">Qty</label>
+              <input type="number" class="form-control" id="qty">
+            </div>
+            <div id="item_btn" class="mt-5">
+              <button type="button" class="btn btn-outline-success">Submit</button>
+              <button type="button" class="btn btn-outline-warning">Update</button>
+              <button type="button" class="btn btn-outline-danger">Delete</button>
+              <button type="reset" class="btn btn-outline-secondary">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+          <div id="item_search" class="search mb-4 mt-4  d-flex flex-row align-items-end">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="form-control" placeholder="Search">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>item_code</option>
+              <option>description</option>
+            </select>
+          </div>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th scope="col">Item Code</th>
+              <th scope="col">Description</th>
+              <th scope="col">Unit Price</th>
+              <th scope="col">Qty</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 </body>
 </html>
