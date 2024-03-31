@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@400;700&display=swap');
+
+
+:root{
+    --primary: linear-gradient(90deg, #2CC56F 6.54%, #BEDC7C 92.06%);
+    --font-color: #344767;
+    --font-grey: #C7C7C7;
+    --accent-color: #3DB278;
+}
+
+
+
