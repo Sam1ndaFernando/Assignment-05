@@ -17,3 +17,17 @@ body{
     background-color: #ffffff;
 }
 
+.logo{
+    font-family: "Krona One", sans-serif;
+    background: var(--primary);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: 80px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+    max-width: 100%;
+}
