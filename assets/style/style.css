@@ -6,6 +6,7 @@
     --font-color: #344767;
     --font-grey: #C7C7C7;
     --accent-color: #3DB278;
+
 }
 
 body{
@@ -31,3 +32,21 @@ body{
 .logo img {
     max-width: 100%;
 }
+
+.nav-item{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-link{
+    color: var(--font-grey);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: linear-gradient(to right, #2c4fff, #b200ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
