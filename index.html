@@ -174,6 +174,8 @@
   </div>
 </section>
 
+
+
 <!--/////////////////////////////////// -- Item Section -- ////////////////////////////////////////////////////-->
 
 <section id="item">
@@ -238,7 +240,141 @@
   </div>
 </section>
 
+<!--/////////////////////////////////// -- Order Section -- ////////////////////////////////////////////////////-->
 
+<section id="order">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <h3 class="header">Place Order</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="order_container mt-3">
+          <div class="container">
+            <h4>Invoice Details</h4>
+            <div class="row">
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div>
+                  <label for="order_Id" class="form-label">Order ID</label>
+                  <input type="text" class="form-control" id="order_Id">
+                </div>
+                <div>
+                  <label for="custId" class="form-label">Customer Id</label>
+                  <select class="form-select" aria-label="Default select example" id="custId">
+                    <option selected>select the customer</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div>
+                  <label for="orderDate" class="form-label">Date</label>
+                  <input type="date" class="form-control" id="orderDate">
+                </div>
+                <div>
+                  <label for="custName" class="form-label">Customer name</label>
+                  <input type="text" class="form-control" id="custName">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order_container mt-3">
+          <div class="container">
+            <h4>Item Select</h4>
+            <div class="row">
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div>
+                  <label for="item_Id" class="form-label">Item Id</label>
+                  <select class="form-select" aria-label="Default select example" id="item_Id">
+                    <option selected>select the item</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qtyOnHand" class="form-label">Qty On Hand</label>
+                  <input type="number" class="form-control" id="qtyOnHand" disabled>
+                </div>
+                <div>
+                  <label for="order_quantity" class="form-label">Order Qty</label>
+                  <input type="number" class="form-control" id="order_quantity" min="0">
+                </div>
+              </div>
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div>
+                  <label for="desc" class="form-label">Item Description</label>
+                  <input type="text" class="form-control" id="desc" disabled>
+                </div>
+                <div>
+                  <label for="unit_price" class="form-label">Unit Price</label>
+                  <input type="number" class="form-control" id="unit_price" disabled>
+                </div>
+                <div class="text-end">
+                  <button class="cart_btn"><i class="fa-solid fa-plus fa-lg m-2"></i>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="order_container mt-3">
+          <div class="container">
+            <h4>Cart</h4>
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th scope="col">Item Id</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Total</th>
+                <th scope="col">Remove</th>
+              </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="order_container mt-3">
+          <div class="container">
+            <div class="row">
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div>
+                  <label for="cash" class="form-label">Cash</label>
+                  <input type="number" class="form-control" id="cash">
+                </div>
+                <div>
+                  <label for="balance" class="form-label">Balance</label>
+                  <input type="number" class="form-control" id="balance">
+                </div>
+              </div>
+              <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div>
+                  <label for="discount" class="form-label">Discount</label>
+                  <input type="number" class="form-control" id="discount" max="100" min="0">
+                </div>
+                <div class="net_total">
+                  <span>Net Total : </span>
+                  <span>0/=</span>
+                </div>
+                <div class="sub_total">
+                  <span>Sub Total : </span>
+                  <span>0/=</span>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-3 d-flex">
+                <button class="order_btn"><i class="fa-solid fa-cart-shopping fa-lg m-3"></i>Place Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
