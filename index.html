@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Point of Sale, POS System">
+  <meta name="keywords" content="Point of Sale, POS System, saminda Fernando">
   <meta name="description" content="Unveiling our groundbreaking Point of Sale (POS) system poised to redefine transaction management for businesses.
   Our innovative solution merges user-friendly interfaces with sophisticated backend capabilities,
   ensuring a seamless and optimized sales process. Experience the future of transactions with our advanced POS system. ">
@@ -138,7 +138,7 @@
               <input type="text" class="form-control" id="contact">
             </div>
             <div id="customer_btn" class="mt-5">
-              <button type="button" class="btn btn-outline-success">Submit</button>
+              <button type="button" class="btn btn-outline-primary">Submit</button>
               <button type="button" class="btn btn-outline-warning">Update</button>
               <button type="button" class="btn btn-outline-danger">Delete</button>
               <button type="reset" class="btn btn-outline-secondary">Reset</button>
@@ -206,7 +206,7 @@
               <input type="number" class="form-control" id="qty">
             </div>
             <div id="item_btn" class="mt-5">
-              <button type="button" class="btn btn-outline-success">Submit</button>
+              <button type="button" class="btn btn-outline-primary">Submit</button>
               <button type="button" class="btn btn-outline-warning">Update</button>
               <button type="button" class="btn btn-outline-danger">Delete</button>
               <button type="reset" class="btn btn-outline-secondary">Reset</button>
@@ -253,7 +253,7 @@
       <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
         <div class="order_container mt-3">
           <div class="container">
-            <h4>Invoice Details</h4>
+            <h4>Invoice Details</h4>                    <!--Invoice Details-->
             <div class="row">
               <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
                 <div>
@@ -283,7 +283,7 @@
 
         <div class="order_container mt-3">
           <div class="container">
-            <h4>Item Select</h4>
+            <h4>Item Select</h4>            <!--Item Select-->
             <div class="row">
               <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
                 <div>
@@ -322,7 +322,7 @@
       <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
         <div class="order_container mt-3">
           <div class="container">
-            <h4>Cart</h4>
+            <h4>Cart</h4>                <!-- Cart -->
             <table class="table table-hover">
               <thead>
               <tr>
@@ -371,6 +371,82 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--/////////////////////////////////// -- Order Details Section -- ////////////////////////////////////////////////////-->
+
+<section id="order_details">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col">
+        <h3 class="header">Order Detail</h3>
+      </div>
+    </div>
+    <div class="order_container">
+      <div class="row">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+          <form>
+            <div class="mb-3">
+              <label for="order_detail_id" class="form-label">Order Id</label>
+              <input type="text" class="form-control" id="order_detail_id">
+            </div>
+            <div class="mb-3">
+              <label for="order_detail_customer_id" class="form-label">Customer Id</label>
+              <input type="text" class="form-control" id="order_detail_customer_id">
+            </div>
+            <div class="mb-3">
+              <label for="order_details_date" class="form-label">Order Date</label>
+              <input type="date" class="form-control" id="order_details_date">
+            </div>
+            <div class="mb-3">
+              <label for="order_details_discount" class="form-label">Discount</label>
+              <input type="text" class="form-control" id="order_details_discount">
+            </div>
+          </form>
+        </div>
+
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+          <div id="order_detail_search" class="search mb-4 mt-4 d-flex flex-row align-items-end">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="form-control" placeholder="Search">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>orderId</option>
+              <option>customerId</option>
+            </select>
+          </div>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th scope="col">Order Id</th>
+              <th scope="col">Customer Id</th>
+              <th scope="col">Date</th>
+              <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="order_container mt-3">
+      <div class="row">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Item Id</th>
+            <th scope="col">Description</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
     </div>
   </div>
