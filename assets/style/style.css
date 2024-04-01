@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@400;700&display=swap');
 
 
-:root{
-    --primary: linear-gradient(90deg, #2CC56F 6.54%, #BEDC7C 92.06%);
+:root {
+    --primary: linear-gradient(to right, #2c4fff 6.54%, #b200ff 92.06%);
     --font-color: #344767;
     --font-grey: #C7C7C7;
     --accent-color: #3DB278;
-
 }
+
 
 body{
     font-family: "Prompt", sans-serif;
@@ -18,8 +18,8 @@ body{
     background-color: #ffffff;
 
     /*blur effect on a navbar background*/
-    background-color: rgba(255, 0, 0, 0.35);
-    backdrop-filter: blur(5px);
+    /*background-color: rgba(255, 0, 0, 0.35);*/
+    /*backdrop-filter: blur(5px);*/
 
 }
 
@@ -48,8 +48,22 @@ body{
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    background: linear-gradient(to right, #2c4fff, #b200ff);
-    -webkit-background-clip: text;
+.active-page{
+    background: var(--primary);
     color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+    transition: all 0.8s ease;
+}
+
+.active-page:after{  /*active page underline*/
+    content: '';
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 60%;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 20px;
+
 }
