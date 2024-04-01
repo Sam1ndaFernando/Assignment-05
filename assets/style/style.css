@@ -114,3 +114,53 @@ section:first-child{
     cursor: pointer;
 }
 
+.chart-card{
+    height: fit-content;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.03);
+    border: none;
+    border-radius: 30px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.chart-title{
+    font-size: 24px;
+    color: var(--font-color);
+}
+
+.chart-card div{
+    width: 550px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-class{                    /* dashboard image size*/
+    width: auto;
+    height: 360px;
+}
+.header{
+    color: var(--font-color);
+    margin-top: 100px;
+}
+
+th[scope = 'col']{
+    background: var(--accent-color);
+    color: #ffffff;
+    text-align: center;
+}
+
+th[scope = 'col']:first-child{
+    border-radius: 15px 0 0 15px;
+}
+
+th[scope = 'col']:last-child{
+    border-radius: 0 15px 15px 0;
+}
+
+td, th[scope = 'row']{
+    text-align: center;
+}
+
+
