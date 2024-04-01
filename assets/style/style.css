@@ -5,7 +5,7 @@
     --primary: linear-gradient(to right, #2c4fff 6.54%, #b200ff 92.06%);
     --font-color: #344767;
     --font-grey: #C7C7C7;
-    --accent-color: #3DB278;
+    --accent-color: #7929ff;
 }
 
 
@@ -80,3 +80,37 @@ section:first-child{
 #home{
     margin-top: 100px;
 }
+
+.card{
+    height: 180px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 30px;
+    padding: 20px;
+    border: 2px solid #b200ff;
+}
+
+.card-title{
+    color: var(--font-grey);
+    font-size: 20px;
+}
+
+.count{
+    color: var(--font-color);
+    font-size: 30px;
+}
+
+.card-body i {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    color: var(--font-grey);
+    font-size: 60px;
+    /*animation: colorChange 6.5s infinite alternate;*/  /*add animation*/
+}
+
+.link-page{
+    text-decoration: none;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
