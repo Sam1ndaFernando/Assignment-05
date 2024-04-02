@@ -163,4 +163,28 @@ td, th[scope = 'row']{
     text-align: center;
 }
 
+.search{
+    position: relative;
+}
+
+.search input{
+    height: 50px;
+    width: 300px;
+    text-indent: 30px;
+    display: inline;
+}
+.search .fa-magnifying-glass{
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+.btn-primary{
+    height: 50px;
+}
+
+.search select{
+    width: 125px;
+    height: 50px;
+    margin-left: 20px;
+}
 
