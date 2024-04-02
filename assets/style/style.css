@@ -30,7 +30,7 @@ body{
     -webkit-background-clip: text;
     font-size: 36px;
     font-weight: 700;
-    margin-right: 80px;
+    margin-right: 20px;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -138,7 +138,8 @@ section:first-child{
 
 .image-class{                    /* dashboard image size*/
     width: auto;
-    height: 360px;
+    height: 380px;
+    margin-left: 20px;
 }
 .header{
     color: var(--font-color);
