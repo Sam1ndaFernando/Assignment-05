@@ -188,3 +188,93 @@ td, th[scope = 'row']{
     margin-left: 20px;
 }
 
+.place_order{
+     background: var(--primary);
+     border: none;
+ }
+
+.order_container{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.12);
+}
+
+.order_container .container .row .col div{
+    margin: 15px;
+}
+
+.order_container .container h4{
+    color: var(--font-color);
+}
+
+.cart_btn{
+    background: #b200ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.cart_remove{
+    background: #ef233c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 3px 15px 3px 15px;
+}
+.cart_remove:hover{
+    opacity: 0.7;
+}
+
+.order_btn {
+    background: linear-gradient(90deg, #57cc99, #b200ff);
+    background-size: 200% 100%;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .chart-card div{
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    section{
+        height: 150vh;
+    }
+
+    .chart-card div{
+        width: 450px;
+    }
+
+    .image-class{
+        display: none;
+    }
+
+    .active-page:after{
+        width: 0;
+    }
+}
+@media all and (max-width: 576px) {
+    .chart-card{
+        display: none;
+    }
+}
