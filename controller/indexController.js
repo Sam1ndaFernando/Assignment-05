@@ -75,3 +75,49 @@ $('#order_details_nav').on('click', () => {
     $('#order_nav').removeClass('active-page');
     $('#order_details_nav').addClass('active-page');
 });
+
+// Get the canvas element
+const ctx = document.getElementById('lineChart').getContext('2d');
+
+// Define data
+const data = {
+    labels: ['January', 'March', 'May', 'July', 'September','November'],
+    datasets: [{
+        label: 'Revenue',
+        data: [50000, 75000, 88000, 65000, 121000,96000],
+        backgroundColor: 'rgba(121,41,255,0.2)',
+        borderColor: '#b200ff',
+        borderWidth: 3
+    }]
+};
+
+// Define chart options
+const options = {
+    scales: {
+        y: {
+            beginAtZero: true
+        }
+    }
+};
+
+// Create the line chart
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: options
+});
+myChart.update();
+
+const count = $('.count');
+
+export function setCustomerCount(cnt){
+    count.eq(0).text(cnt);
+}
+
+export function setItemCount(cnt){
+    count.eq(1).text(cnt);
+}
+
+export function setOrderCount(cnt){
+    count.eq(2).text(cnt);
+}
