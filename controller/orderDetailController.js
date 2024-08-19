@@ -73,7 +73,7 @@ function loadOrderDetails(order) {
                         success: function (data) {
                             data.forEach((item) => {
                                 if (item.itemId === orderDetail.itemId) {
-                                     let total = item.unitPrice * orderDetail.qty;
+                                    let total = item.unitPrice * orderDetail.qty;
 
                                     $('tbody').eq(4).append(
                                         `<tr>

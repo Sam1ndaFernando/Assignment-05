@@ -31,7 +31,7 @@ export function setCustomerIds(data) {
 
     data.map((customer) => {
         customer_id.append(
-            `<option>${customer.customerId}</option>`   
+            `<option>${customer.customerId}</option>`
         )
     });
 }
@@ -151,7 +151,7 @@ order_btn.on('click', () => {
     let order_details = [];
 
     if (validate(orderId, 'order id') && validate(order_date, 'order date') &&
-    validate(customerId, 'customer id')) {
+        validate(customerId, 'customer id')) {
         if (cashAmount >= subTotal) {
             if (cart.length !== 0) {
                 Swal.fire({
@@ -161,7 +161,7 @@ order_btn.on('click', () => {
                     denyButtonText: `Don't save`,
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        
+
                         let order = new OrderModel(orderId, order_date, discountValue, subTotal, customerId);
 
                         cart.forEach((cart_item) => {

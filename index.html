@@ -53,17 +53,18 @@
 
 <main>
   <!--/////////////////////////////////// -- Home Section -- ////////////////////////////////////////////////////-->
-
+  <!-- home section -->
   <section id="home">
     <div class="container">
       <div class="row">
+
         <div class="col col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">Customers</h3>
               <p class="count">125</p>
               <i class="fa-solid fa-user fa-2xl"></i>
-              <a class="link-page" id="customer_link">>> Manage Customers <<</a>
+              <a class="link-page" id="customer_link">Manage Customers ></a>
             </div>
           </div>
         </div>
@@ -74,7 +75,7 @@
               <h3 class="card-title">Items</h3>
               <p class="count">229</p>
               <i class="fa-solid fa-layer-group fa-2xl"></i>
-              <a class="link-page" id="item_link">>> Manage Items <<</a>
+              <a class="link-page" id="item_link">Manage Items ></a>
             </div>
           </div>
         </div>
@@ -85,7 +86,7 @@
               <h3 class="card-title">Orders</h3>
               <p class="count">56</p>
               <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-              <a class="link-page" id="order_link">>> Manage Orders <<</a>
+              <a class="link-page" id="order_link">Manage Orders ></a>
             </div>
           </div>
         </div>
@@ -108,11 +109,9 @@
     </div>
   </section>
 
-  <!--/////////////////////////////////// -- Customer Section -- ////////////////////////////////////////////////////-->
-
+  <!-- customer section -->
   <section id="customer">
     <div class="container">
-
       <div class="row mb-3">
         <div class="col">
           <h3 class="header">Manage Customer</h3>
@@ -139,13 +138,14 @@
                 <input type="text" class="form-control" id="contact">
               </div>
               <div id="customer_btn" class="mt-5">
-                <button type="button" class="btn btn-outline-primary">Submit</button>
+                <button type="button" class="btn btn-outline-success">Submit</button>
                 <button type="button" class="btn btn-outline-warning">Update</button>
                 <button type="button" class="btn btn-outline-danger">Delete</button>
                 <button type="reset" class="btn btn-outline-secondary">Reset</button>
               </div>
             </form>
           </div>
+
           <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
             <div id="customer_search" class="search mb-4 mt-4 d-flex flex-row align-items-end">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -168,17 +168,13 @@
               </thead>
               <tbody></tbody>
             </table>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-  <!--/////////////////////////////////// -- Item Section -- ////////////////////////////////////////////////////-->
-
+  <!-- item section -->
   <section id="item">
     <div class="container">
       <div class="row mb-3">
@@ -207,7 +203,7 @@
                 <input type="number" class="form-control" id="qty">
               </div>
               <div id="item_btn" class="mt-5">
-                <button type="button" class="btn btn-outline-primary">Submit</button>
+                <button type="button" class="btn btn-outline-success">Submit</button>
                 <button type="button" class="btn btn-outline-warning">Update</button>
                 <button type="button" class="btn btn-outline-danger">Delete</button>
                 <button type="reset" class="btn btn-outline-secondary">Reset</button>
@@ -241,8 +237,7 @@
     </div>
   </section>
 
-  <!--/////////////////////////////////// -- Order Section -- ////////////////////////////////////////////////////-->
-
+  <!-- order section -->
   <section id="order">
     <div class="container">
       <div class="row mb-4">
@@ -254,7 +249,7 @@
         <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
           <div class="order_container mt-3">
             <div class="container">
-              <h4>Invoice Details</h4>                    <!--Invoice Details-->
+              <h4>Invoice Details</h4>
               <div class="row">
                 <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
                   <div>
@@ -284,7 +279,7 @@
 
           <div class="order_container mt-3">
             <div class="container">
-              <h4>Item Select</h4>            <!--Item Select-->
+              <h4>Item Select</h4>
               <div class="row">
                 <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
                   <div>
@@ -323,7 +318,7 @@
         <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
           <div class="order_container mt-3">
             <div class="container">
-              <h4>Cart</h4>                <!-- Cart -->
+              <h4>Cart</h4>
               <table class="table table-hover">
                 <thead>
                 <tr>
@@ -377,8 +372,7 @@
     </div>
   </section>
 
-  <!--/////////////////////////////////// -- Order Details Section -- ////////////////////////////////////////////////////-->
-
+  <!-- order details section -->
   <section id="order_details">
     <div class="container">
       <div class="row mb-5">
@@ -453,10 +447,9 @@
   </section>
 </main>
 
-
 <!-- js libraries -->
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="../Web-POS-System/assets/jquery/jquery.min.js"></script>
+<script src="assets/jquery/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
 
@@ -466,8 +459,6 @@
 <script type="module" src="controller/itemController.js"></script>
 <script type="module" src="controller/orderController.js"></script>
 <script type="module" src="controller/orderDetailController.js"></script>
-
-
 
 </body>
 </html>
